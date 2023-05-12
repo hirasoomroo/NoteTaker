@@ -1,4 +1,5 @@
-const express = require('express');
+// Set up requirements
+const express = require("express");
 const path = require("path");
 const util = require("util");
 const fs = require("fs");
@@ -67,7 +68,7 @@ app.delete("/api/notes/:id", async function (req, res) {
 // Read function
 const getNotes = async () => {
     try {
-        const data = await readFile(path.join(__dirname, './db/db.json'), 'utf8');
+        const data = await readFile(path.join(__dirname, 'db/db.json'), 'utf8');
         return JSON.parse(data);
     } catch (err) {
         console.error(err);
@@ -79,7 +80,7 @@ const getNotes = async () => {
 const writeNotes = async (data) => {
     try {
         const update = await writeFile(
-            path.join(__dirname, '../db/db.json'),
+            path.join(__dirname, './db/db.json'),
             JSON.stringify(data)
         );
         return update;
