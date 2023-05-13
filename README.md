@@ -14,6 +14,7 @@ AS A small business owner
 I WANT to be able to write and save notes
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ```
+<img width="1167" alt="Screenshot 2023-05-13 at 8 49 09 AM" src="https://github.com/hirasoomroo/NoteTaker/assets/120343929/d1ef9658-317c-4562-92d5-e862b0a04012">
 
 
 ## Acceptance Criteria
